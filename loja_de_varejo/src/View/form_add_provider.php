@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<nav class="bg-blue-400">
+            <ul>
+                <li class="inline">
+                    <a href="../../index.html">Home</a>
+                </li>
+                <li class="inline">
+                    <a href="form_add_product.php">Novo produto</a>
+                </li>
+                <li class="inline">
+                    <a href="#">Novo fornecedor</a>
+                </li>
+                <li class="inline">
+                    <a href="../Controller/Produto.php?operation=list">Lista de produtos</a>
+                </li>
+                <li>
+                    <a href="../Controller/Provider.php?operation=list">Lista de fornecedores</a>
+                </li>
+            </ul>
+    </nav>
     <form action="../Controller/Provider.php" method="POST">
         <fieldset class="p-4 m-5 border border-black">
             <legend>Dados do fornecedor</legend>
@@ -31,6 +50,10 @@
                         <article class="mb-3">
                             <label for="publicPlace" class="mr-2">Logradouro:</label>
                             <input type="text" name="publicPlace" id="publicPlace" class="border border-black" required>
+                        </article>
+                        <article class="mb-3">
+                            <label for="streetName" class="mr-2">Nome:</label>
+                            <input type="text" name="streetName" id="streetName" class="border border-black" required>
                         </article>
                         <article class="mb-3">
                             <label for="numberOfStreet" class="mr-2">Número:</label>

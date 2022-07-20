@@ -8,7 +8,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form action="../controller/Produto.php" 
+<nav class="bg-blue-400">
+            <ul>
+                <li class="inline">
+                    <a href="../../index.html">Home</a>
+                </li>
+                <li class="inline">
+                    <a href="#">Novo produto</a>
+                </li>
+                <li class="inline">
+                    <a href="form_add_provider.php">Novo fornecedor</a>
+                </li>
+                <li class="inline">
+                    <a href="../Controller/Produto.php?operation=list">Lista de produtos</a>
+                </li>
+                <li>
+                    <a href="../Controller/Provider.php?operation=list">Lista de fornecedores</a>
+                </li>
+            </ul>
+    </nav>
+    <form action="../controller/Produto.php?operation=insert" 
     method="POST">
         <fieldset class="p-4 m-5 border border-black">
             <legend>Dados do produto</legend>
